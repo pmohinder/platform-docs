@@ -1,19 +1,19 @@
-Configuring the PolyLogyx Client
+Configuring the EclecticIQ ER Client
 ================================================
 
-After the PolyLogyx client is provisioned, the default and seeded configuration comes into play. If needed, you can customize the various configuration settings defined for the PolyLogyx client. The documentation covered in this chapter assumes Windows x64 as the client operating system as PolyLogyx ESP provides maximum number of configuration choices for Windows x64 based clients. Similar steps can be used for clients based on other supported operating systems.
+After the EclecticIQ ER client is provisioned, the default and seeded configuration comes into play. If needed, you can customize the various configuration settings defined for the EclecticIQ ER client. The documentation covered in this chapter assumes Windows x64 as the client operating system as PolyLogyx ESP provides maximum number of configuration choices for Windows x64 based clients. Similar steps can be used for clients based on other supported operating systems.
 
 To customize the configuration settings, you can modify the following:
 
 1. osquery.flags file 
 2. Predefined filters and queries
-3. PolyLogyx configuration options
+3. EclecticIQ ER configuration options
 
 The osquery.flags File
 --------------------------------
 The osquery.flags file includes all the parameters needed for osquery initialization and functioning. By default, this file is stored in the <i>C:\Program Files\plgx_osquery</i> folder. 
 
-Although this file contains all the flags supported by osquery, in this section, we will discuss only the key flags that are relevant for the PolyLogyx platform. 
+Although this file contains all the flags supported by osquery, in this section, we will discuss only the key flags that are relevant for the EclecticIQ ER platform. 
 
 Update the parameters to configure the deployment environment to meet your specific needs. Note that modifying these values may significantly alter the performance of the endpoint agent. These configured values are passed to the endpoint agent during the [client provisioning](https://github.com/polylogyx/platform-docs/03_Provisioning_Polylogyx_Client#provisioning-the-polylogyx-client-for-endpoints) through the osquery.flags file.
 
@@ -36,7 +36,7 @@ For the Windows operating system, PolyLogyx Extension is part of the agent and t
     b. Set of scheduled queries that captures all the process creation and network connections data from the endpoint. 
     The configurations are editable and the changes in the configuration are picked up by the endpoint based on the <i>config_tls_refresh</i> value in the osquery.flags file.
 
-For Windows x64 systems, PolyLogyx ESP is shipped with 2 types of pre-baked configurations, called as "Deep" and "Shallow". Deep is representative of a configuration designed for more aggressive data collection from endpoints than Shallow. Each configuration provides a default set of scheduled queries and filters and at any point only on of them is "active". The "active" one is also highlighted by the green dot and the other with a red dot.
+For Windows x64 systems, EclecticIQ ER is shipped with 2 types of pre-baked configurations, called as "Deep" and "Shallow". Deep is representative of a configuration designed for more aggressive data collection from endpoints than Shallow. Each configuration provides a default set of scheduled queries and filters and at any point only on of them is "active". The "active" one is also highlighted by the green dot and the other with a red dot.
 
 ![deep_shallow_config](../images/config_deep_shallow.png)
 
@@ -64,9 +64,9 @@ Perform these steps to view or edit defined filters:
 
 8. Click Update to save your changes. 
 
-PolyLogyx configuration options
+EclecticIQ ER configuration options
 ---------------------
-The PolyLogyx configuration options are global in nature and are applied to all agents in addition to the agent configurations. The PolyLogyx platform provides the feature of 'response action' thru the same osquery extension that is used to collect endpoint telemetry. The response action can be controlled via these configuration options alongwith other osquery options.
+The EclecticIQ ER configuration options are global in nature and are applied to all agents in addition to the agent configurations. The EclecticIQ ER platform provides the feature of 'response action' thru the same osquery extension that is used to collect endpoint telemetry. The response action can be controlled via these configuration options alongwith other osquery options.
 
 GLOBAL for all nodes vs Custom config for selected nodes
 
@@ -85,12 +85,12 @@ Perform these steps to view or edit this configuration:
 
 | Option | Description                                                                                                                                                                                         |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| custom_plgx_EnableLogging | Specifies whether to enable logging for the PolyLogyx Response Action on client. By default, set to true.   | 
+| custom_plgx_EnableLogging | Specifies whether to enable logging for the EclecticIQ ER Response Action on client. By default, set to true.   | 
 | custom_plgx_EnableSSL | Specifies whether to enable or disable SSL cert events. By default, set to true.   | 
 | custom_plgx_LogFileName | Specifies the name and location of the log file.   |
-| custom_plgx_LogLevel | Indicates the logging level for the PolyLogyx Response Action. Possible values are 0 (Trace), 1 (Debug), 2 (Info), 3 (Warning), and 4 (Error). By default, this is set to 1 (Debug).  |
+| custom_plgx_LogLevel | Indicates the logging level for the EclecticIQ ER Response Action. Possible values are 0 (Trace), 1 (Debug), 2 (Info), 3 (Warning), and 4 (Error). By default, this is set to 1 (Debug).  |
 | custom_plgx_LogModeQuiet | Specifies whether the log messages are printed on console or not. Relevant only when running osquery as a console application. |
-| custom_plgx_ServerPort | Specifies the port on which the PolyLogyx server is listening. By default, this is set to 443 and should not be changed. |
+| custom_plgx_ServerPort | Specifies the port on which the EclecticIQ ER server is listening. By default, this is set to 443 and should not be changed. |
 | custom_plgx_enable_respserver | This option allows you to enable or disable the response feature. By default, this is enabled. |
 | schedule_splay_percent  |  Specifies the percentage to splay the config times for scheduled queries.   |  
 | custom_plgx_EnableWatcher  |  This flag enables Memory Watcher functionality of the agent. The entails disabling agent's memory intensive operations if its memory limit is breached,allowing agent memory to recover and enable again when memory range is within acceptable limit.   |  
@@ -103,4 +103,4 @@ Perform these steps to view or edit this configuration:
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Configuring the server](../04_PolyLogyx_Server_Configurations/Readme.md)  | [Next >> Configuring the filters](../06_Understanding_Filters/Readme.md)|
+|[Previous << Configuring the server](../04_PolyLogyx_EclecticIQ_ER_Configurations/Readme.md)  | [Next >> Configuring the filters](../06_Understanding_Filters/Readme.md)|

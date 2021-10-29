@@ -1,7 +1,7 @@
 Tables
 ======
 
-The PolyLogyx Endpoint Platform leverages osquery that enables PolyLogyx to
+The EclecticIQ ER Endpoint Platform leverages osquery that 
 expose the endpoint node as a relational database in the form of SQL tables.
 These tables represent a breadth of system information, including running
 processes, installed applications, hardware properties, and network connections.
@@ -416,7 +416,7 @@ Captures the yara matches based on input rules.
 osquery Tables
 --------------
 
-This release of the PolyLogyx Endpoint Platform embeds osquery v3.2.6. PolyLogyx
+This release of the EclecticIQ ER Endpoint Platform embeds osquery v4.3.0. PolyLogyx
 will make a concerted effort to ensure that we leverage the latest, stable
 version of osquery. For more information on base osquery tables and schema,
 refer to <https://osquery.io/schema/>*.*

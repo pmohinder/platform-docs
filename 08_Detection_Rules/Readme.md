@@ -1,8 +1,8 @@
 Understanding Rules
 ===============
-Rules, in the PolyLogyx framework, offer a mechanism to deep dive into the data captured from the endpoints. You can narrow down and review selective data based on your area of interest. For example, you can define rules to detect potentially malicious system files.  Alternatively, you can define rules to meet your compliance needs. 
+Rules, in the EclecticIQ ER platform, offer a mechanism to deep dive into the data captured from the endpoints. You can narrow down and review selective data based on your area of interest. For example, you can define rules to detect potentially malicious system files.  Alternatively, you can define rules to meet your compliance needs. 
 
-PolyLogyx provides a set of predefined rules (available only in the Enterprise Edition of the PolyLogyx ESP) that can serve as a starting point to enable you to define rules specific to your needs. PolyLogyx provides a seeded repository of rules in Sigma format that you can use as a starting point. These rules have been developed based on MITRE attack vector framework. Navigate to https://github.com/polylogyx/DetectionRules to review the seeded rules.
+EclecticIQ ER provides a set of predefined rules (available only in the Enterprise Edition of the EclecticIQ ER ) that can serve as a starting point to enable you to define rules specific to your needs. EclecticIQ ER provides a seeded repository of rules in Sigma format that you can use as a starting point. These rules have been developed based on MITRE attack vector framework. Navigate to https://github.com/polylogyx/DetectionRules to review the seeded rules.
 
 You can define rules using the web interface. Perform these steps to view or edit rules:
 1. Access the web interface for the server.

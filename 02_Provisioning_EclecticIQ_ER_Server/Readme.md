@@ -1,8 +1,8 @@
-Provisioning the PolyLogyx Server 
+Provisioning the EclecticIQ ER Server 
 ===================================
 
-The PolyLogyx server is a headless server platform that is flexible and allows
-you to effectively manage and control data. Here are the features the PolyLogyx
+The EclecticIQ ER server is a headless server platform that is flexible and allows
+you to effectively manage and control data. Here are the features that EclecticIQ ER
 server offers:
 
 -   Agent and policy management
@@ -29,7 +29,7 @@ This chapter includes these topics:
 <br>Before you Begin
 --------------------
 
-Before you begin installation of the PolyLogyx server, ensure you read the
+Before you begin installation of the EclecticIQ ER server, ensure you read the
 following information.
 
 -   Server installation is supported only on the Ubuntu platform version 16.04 (or later) .
@@ -43,13 +43,13 @@ following information.
 
     -   16 GB RAM (Use 64 GB RAM if number of suppoerted clients > 500)
 
--   Contact PolyLogyx to procure the following:
+-   Contact EclecticIQ to procure the following:
 
     -   Server Docker image (plgx-esp.zip)
 
     -   Clean-up script (docker-cleanup.sh)
 
--   Docker and Docker Compose are required to install the PolyLogyx server.
+-   Docker and Docker Compose are required to install the EclecticIQ ER server.
 
 -   In-bound Ports 5000, 9000 and 443 are open on the system. Port 5000 is used for UI, 9000 and 443 for agent communication
 
@@ -59,10 +59,10 @@ following information.
 | Docker Compose (1.21.1 or later) | Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. To install Docker Compose, complete the [prerequisites](https://docs.docker.com/compose/install/#prerequisites) and then perform [installation](https://docs.docker.com/compose/install/#install-compose). 
 
 
-Installing the PolyLogyx Server
+Installing the EclecticIQ ER Server
 -------------------------------
 
-After you install Docker and Docker Compose, you can install the PolyLogyx
+After you install Docker and Docker Compose, you can install the EclecticIQ ER
 server.
 
 1.  Clean-up existing Docker images and containers using the docker-cleanup.sh
@@ -98,7 +98,7 @@ server.
     writing new private key to 'nginx/private.key'
     ``` 
             
-    In the syntax, \<IP address\> is the IP address of the system on which on to host the PolyLogyx server. This will generate 
+    In the syntax, \<IP address\> is the IP address of the system on which on to host the EclecticIQ ER server. This will generate 
     the certificate for osquery (used for provisioning clients) and place the certificate in the plgx-esp folder.
 
 5.  Modify and save the docker-compose.yaml file.
@@ -118,9 +118,9 @@ server.
 | Parameter | Description                                                                                                                                                                                  |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ENROLL_SECRET | Specifies the enrollment shared secret that is used for authentication.                                                                                                                              |
-| POLYLOGYX_USER       | Refers to the user login name for the PolyLogyx server.                                                                                                         |
-| POLYLOGYX_PASSWORD       | Indicates to the password for the PolyLogyx server user.                                                                                                              |
-| RSYSLOG_FORWARDING       | Set to true to enable forwarding of osquery and PolyLogyx logs to the syslog receiver by using rsyslog. |
+| POLYLOGYX_USER       | Refers to the user login name for the EclecticIQ ER server.                                                                                                         |
+| POLYLOGYX_PASSWORD       | Indicates to the password for the EclecticIQ ER server user.                                                                                                              |
+| RSYSLOG_FORWARDING       | Set to true to enable forwarding of osquery and EclecticIQ ER logs to the syslog receiver by using rsyslog. |
 | VT_API_KEY       | Represents the VirusTotal API key.                                                                            | 
 | IBMxForceKey       | Represents the IBMxForce key.                                                                            | 
 | IBMxForcePass       | Specifies the IBMxForce pass.                                                                            | 
@@ -154,19 +154,19 @@ server.
     ```https://<ip address>:5000```
 
     In the syntax, `<IP address>` is the IP address of the system on which the
-    PolyLogyx server is hosted. This is the IP address you specified in step 4.
+    EclecticIQ ER server is hosted. This is the IP address you specified in step 4.
 
 8.  Ignore the SSL warning, if any.
 
 9.  Log on to the server using the credentials provided above at step 5a.
 
-10.  Provision the clients. For more information, see [Provisioning the PolyLogyx
-    Client for Endpoints](../03_Provisioning_Polylogyx_Client/Readme.md).
+10.  Provision the clients. For more information, see [Provisioning the EclecticIQ ER
+    Client for Endpoints](../03_Provisioning_EclecticIQ_ER_Client/Readme.md).
 
 Uninstalling the Server 
 ------------------------
 
-To uninstall the PolyLogyx server, run the following command to clean-up
+To uninstall the EclecticIQ ER server, run the following command to clean-up
 existing Docker images and containers.
 
 ```~/Downloads\$ sh ./docker-cleanup.sh```
@@ -176,11 +176,11 @@ existing Docker images and containers.
 Upgrading the Server
 --------------------
 
-PolyLogyx ESP can be upgraded from the earlier supported release through an upgrade script.
+EclecticIQ ER can be upgraded from the earlier supported release through an upgrade script.
 
 The upgrade_script.sh script is part of the platform bundle.
 
-PolyLogyx ESP could also be upgraded manually. Complete these steps to perform an upgrade:
+EclecticIQ ER could also be upgraded manually. Complete these steps to perform an upgrade:
 
 1. Back up the certificate.crt and private.key files stored in the nginx directory in the installation
 directory. 
@@ -195,8 +195,8 @@ information, see [Uninstalling the Server](#uninstalling-the-server).
     
     3. Copy the backed up postgres-data folder you backed up to the new installation directory.
     
-   For more information, see [Installing the PolyLogyx Server](#installing-the-polylogyx-server).
+   For more information, see [Installing the EclecticIQ ER Server](#installing-the-polylogyx-server).
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Architecture Overview](../01_Architecture/Readme.md)  | [Next >> Provisioning the PolyLogyx Client](../03_Provisioning_Polylogyx_Client/Readme.md)|
+|[Previous << Architecture Overview](../01_Architecture/Readme.md)  | [Next >> Provisioning the EclecticIQ ER Client](../03_Provisioning_EclecticIQ_ER_Client/Readme.md)|

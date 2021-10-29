@@ -2,11 +2,11 @@ Response Actions
 =================================== 
 
 ```diff
-! Only available in the Enterprise Edition of the PolyLogyx ESP. !
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
 ```
 
 
-PolyLogyx platform provides the security administrator abilities to take certain controlled actions in response to the detection of an intrusion, or attempt of one. These actions can allow the admininstrator to:
+EclecticIQ ER platform provides the security administrator abilities to take certain controlled actions in response to the detection of an intrusion, or attempt of one. These actions can allow the admininstrator to:
 
 a) Delete a file from the endpoint
 

@@ -10,7 +10,7 @@ Review Alerts Traffic
 --------------------
 
 ```diff
-! Only available in the Enterprise Edition of the PolyLogyx ESP. !
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
 ```
 On the Alerts page, review the event timeline for your enterprise on the top bar to review the traffic trend. Each cluster on the timeline represents a collection of alerts. Hover over a cluster to see its details. Click on the event cluster to see the alerts present in that cluster.
 
@@ -37,7 +37,7 @@ Perform these steps to review alert information:
 Investigating Alerts
 --------------------
 ```diff
-! Only available in the Enterprise Edition of the PolyLogyx ESP. !
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
 ```
 
 Deep dive or investigate an alert to determine the actions you might need to take. 

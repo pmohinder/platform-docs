@@ -1,8 +1,8 @@
 Using REST APIs
 ===============
 
-PolyLogyx REST API allows developers to use a programming language of their
-choice to integrate with the headless PolyLogyx server. The REST APIs provide
+EclecticIQ ER REST API allows developers to use a programming language of their
+choice to integrate with the headless EclecticIQ ER server. The REST APIs provide
 the means to configure and query the data from the fleet manager. The APIs also
 allow an openc2 orchestrator to get visibility into endpoint data and
 activities, which can then be used to craft an openc2 action.
@@ -23,13 +23,13 @@ REST Based API
 Versioning
 ----------
 
-The PolyLogyx API is a versioned API. We reserve the right to add new
+The EclecticIQ ER API is a versioned API. We reserve the right to add new
 parameters, properties, or resources to the API without advance notice. These
 updates are considered non-breaking and the compatibility rules below should be
 followed to ensure your application does not break.
 
 Breaking changes such as removing or renaming an attribute will be released as a
-new version of the API. PolyLogyx will provide a migration path for new versions
+new version of the API. EclecticIQ ER will provide a migration path for new versions
 of APIs and will communicate timelines for end-of-life when deprecating APIs. Do
 not consume any API unless it is formally documented. All undocumented endpoints
 should be considered private, subject to change without notice, and not covered
@@ -44,13 +44,13 @@ BASE_URL
 
 API calls are made to a URL to identify the location from which the data is
 accessed. You must replace the placeholders \<server IP\> and \<port\> with
-actual details for your PolyLogyx server. The BASE_URL follows this template:
+actual details for your EclecticIQ ER server. The BASE_URL follows this template:
 https://\<server\>:\<port\>/services/api/v1/
 
 Authentication
 --------------
 
-The PolyLogyx API requires all requests to present a valid access token
+The EclecticIQ ER API requires all requests to present a valid access token
 (x-access-token) specified in the HTTP Authorization header for every
 HTTP request. If the access token key is missing or invalid, a 401 unauthorized response
 code is returned.
@@ -67,7 +67,7 @@ rejected by the server.
 Client Request Context
 ----------------------
 
-PolyLogyx will derive client request context directly from the HTTP request
+EclecticIQ ER will derive client request context directly from the HTTP request
 headers and client TCP socket. Request context is used to evaluate policies and
 provide client information for troubleshooting and auditing purposes.
 
@@ -335,7 +335,7 @@ Updates the email configuration used by PolyLogyx platform user to send emails f
 ```
 
 ### Test email sender and recipients
-Tests the email configuration, which is going to be used by PolyLogyx platform user before updating.
+Tests the email configuration, which is going to be used by EclecticIQ ER platform user before updating.
 **URL:** https://<BASE_URL>/email/test
 **Request Type:** POST
 **Example Request Format:**
@@ -400,7 +400,7 @@ Updates the data purge duration for which result log, alerts and status logs sho
 ```
 
 ### Get Dashboard data
-Get the data required for POLYLOGYX platform for dashboard.
+Get the data required for EclecticIQ ER platform for dashboard.
 **URL:** https://<BASE_URL>/dashboard
 **Request Type:** GET
 **Example Response Format:**
@@ -518,7 +518,7 @@ Returns a response of a csv file with all hosts information.
 **Response:** Returns a csv file.
 
 ### View all hosts
-Lists all hosts managed by POLYLOGYX platform for the filters applied.
+Lists all hosts managed by EclecticIQ ER platform for the filters applied.
 **URL:** https://<BASE_URL>/hosts
 **Request Type:** POST
 **Example Response Format:**
@@ -578,7 +578,7 @@ Lists all hosts managed by POLYLOGYX platform for the filters applied.
 ```
 
 ### View a host
-Lists a node info managed by the POLYLOGYX platform and its properties.
+Lists a node info managed by the EclecticIQ ER platform and its properties.
 **URL:** https://<BASE_URL>/hosts/<string:host_identifier> 
 	https://<BASE_URL>/hosts/<int:node_id>
 **Request Type:** GET
@@ -1548,7 +1548,7 @@ Returns list of yara file names.
 ```
 
 ### Upload YARA file
-Uploads a yara file to the POLYLOGYX server.
+Uploads a yara file to the EclecticIQ ER server.
 **URL:** https://<BASE_URL>/yara/add
 **Request Type:** POST
 **Example Request Format:**
