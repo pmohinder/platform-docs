@@ -65,30 +65,13 @@ Installing the EclecticIQ ER Server
 After you install Docker and Docker Compose, you can install the EclecticIQ ER
 server.
 
-1.  Clean-up existing Docker images and containers using the docker-cleanup.sh
-    file.
-    
-    ```~/Downloads\$ sh ./docker-cleanup.sh```
 
-**Note:** This will clean **all** the images and containers.
+1. Checkout this repository on the local server.
 
-2.  Unzip the plgx-esp.zip file on the local server.
-**Note:** Do not unzip into a temporary folder.
-
-    ```(Md5: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
-    ~/Downloads$ ls
-    plgx-esp.zip
-    ~/Downloads$ unzip plgx-esp.zip 
-    Archive:  plgx-esp.zip
-    inflating: plgx-esp/server.crt 
-    <snip>
-    inflating: plgx-esp/Doorman/doorman/plugins/alerters/debug.pyc  
-    ~/Downloads$ ls
-    plgx-esp  plgx-esp.zip```
-3.  Switch to the folder where the installer is placed.
+2.  Switch to the repository directory.
 
     ```~/Downloads\$ cd plgx-esp/```
-4.  Enter the certificate-generate.sh script to generate certificates for
+3.  Enter the certificate-generate.sh script to generate certificates for
     osquery.  
     ```~/Downloads/plgx-esp$ sh ./certificate-generate.sh <IP address>```
     ```x.x.x.x
@@ -101,7 +84,7 @@ server.
     In the syntax, \<IP address\> is the IP address of the system on which on to host the EclecticIQ ER server. This will generate 
     the certificate for osquery (used for provisioning clients) and place the certificate in the plgx-esp folder.
 
-5.  Modify and save the docker-compose.yaml file.
+4.  Modify and save the .env file.
 
     1.  Edit the following configuration parameters in the file. In the syntax, replace the values in angle brackets with required values.
     ```
@@ -132,7 +115,7 @@ server.
 
 
    
-6.  Run the following command to start Docker compose.
+5.  Run the following command to start Docker compose.
 
     ```docker-compose -p 'plgx-esp' up -d```
     
@@ -148,7 +131,7 @@ server.
         API key is : <API_KEY>
         Server is up and running```
         
-7.  Log on to server using following URL using the latest version of Chrome or
+6.  Log on to server using following URL using the latest version of Chrome or
     Firefox browser.
     
     ```https://<ip address>:5000```
@@ -156,11 +139,11 @@ server.
     In the syntax, `<IP address>` is the IP address of the system on which the
     EclecticIQ ER server is hosted. This is the IP address you specified in step 4.
 
-8.  Ignore the SSL warning, if any.
+7.  Ignore the SSL warning, if any.
 
-9.  Log on to the server using the credentials provided above at step 5a.
+8.  Log on to the server using the credentials provided above at step 5.
 
-10.  Provision the clients. For more information, see [Provisioning the EclecticIQ ER
+9.  Provision the clients. For more information, see [Provisioning the EclecticIQ ER
     Client for Endpoints](../03_Provisioning_EclecticIQ_ER_Client/Readme.md).
 
 Uninstalling the Server 
@@ -182,20 +165,15 @@ The upgrade_script.sh script is part of the platform bundle.
 
 EclecticIQ ER could also be upgraded manually. Complete these steps to perform an upgrade:
 
-1. Back up the certificate.crt and private.key files stored in the nginx directory in the installation
-directory. 
-2. Back up the postgres-data folder from the existing installation directory. 
-3. Uninstall the installed version. For more
-information, see [Uninstalling the Server](#uninstalling-the-server).
-4. Install the latest version of the server. When installing, instead of performing step 4:
+1. Upgrade the code to the latest version with git pull or downloading the released bundle
 
-    1. Copy the certificate.crt and private.key files you backed up to the nginx directory. 
-    
-    2. Set –tls_hostname=<IP_ADDRESS>:9000 for both the resources/osquery.flags and resources/osquery_linux.flags files.
-    
-    3. Copy the backed up postgres-data folder you backed up to the new installation directory.
-    
-   For more information, see [Installing the EclecticIQ ER Server](#installing-the-polylogyx-server).
+2. Back up the certificate.crt and private.key files stored in the nginx directory in the installation directory. 
+
+3. Execute ```sudo bash upgrade_script.sh --path <Path to the old installation directory>```  
+
+4. Update the ```.env``` file 
+
+5. Execute ```docker-compose -p 'plgx-esp' up --build -d```
 
 |										|																							|
 |:---									|													   								    ---:|
