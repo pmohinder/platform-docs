@@ -41,4 +41,4 @@ EclecticIQ ER can auto purge the data beyond the specified data retention interv
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Provisioning the EclecticIQ ER Client](../03_Provisioning_EclecticIQ_ER_Client/Readme.md)  | [Next >> Configuring the agent](../05_PolyLogyx_EclecticIQ_ER_Configurations/Readme.md)|
+|[Previous << Provisioning the EclecticIQ ER Client](../03_Provisioning_EclecticIQ_ER_Client/Readme.md)  | [Next >> Configuring the agent](../05_EclecticIQ_ER_Configurations/Readme.md)|

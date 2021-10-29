@@ -117,7 +117,7 @@ Here is an example of a remote command execution using PSEXEC.
 
 The installation begins and the CPT utility brings the required artefacts on the
 endpoints. After installation is complete, the Polylogyx Osqueryd service and PolyLogyx
-extension are deployed and the osqueryd service starts. Also, EclecticIQ ER Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the PolyLogyx Agent service restarts it. The following output is
+extension are deployed and the osqueryd service starts. Also, EclecticIQ ER Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the EclecticIQ ER Agent service restarts it. The following output is
 displayed if the command is successful.
 
 ```
@@ -458,4 +458,4 @@ for error details.
 	
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Provisioning the PolyLogyx Server](../02_Provisioning_EclecticIQ_ER_Server/Readme.md)  | [Next >> Configuring the server](../04_PolyLogyx_EclecticIQ_ER_Configurations/Readme.md)|
+|[Previous << Provisioning the EclecticIQ ER Server](../02_Provisioning_EclecticIQ_ER_Server/Readme.md)  | [Next >> Configuring the server](../04_EclecticIQ_ER_Configurations/Readme.md)|

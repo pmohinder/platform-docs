@@ -108,7 +108,7 @@ to indicate API errors.
 **URL:** https://<BASE_URL>/downloads/<path: filename>
 **Request type:** GET
 ```
-  https://<BASE_URL>/downloads/certificate.crt -- to download the PolyLogyx server certificate
+  https://<BASE_URL>/downloads/certificate.crt -- to download the EclecticIQ ER Server certificate
   https://<BASE_URL>/downloads/windows/plgx_cpt.exe -- to download the windows Client Provisioning Tool
   https://<BASE_URL>/downloads/linux/x64/plgx_cpt -- to download the Linux Client Provisioning Tool
   https://<BASE_URL>/downloads/plgx_cpt.sh -- to download the Mac installer
@@ -118,7 +118,7 @@ User's Section:
 ---------------
 
 ### Fetch auth token using username and password
-Use username and password to get an auth token, which is to access the PolyLogyx platform UI.
+Use username and password to get an auth token, which is to access the EclecticIQ ER platform UI.
 **URL:** https://<BASE_URL>/login
 **Request Type:** POST
 **Example Request Format:**
@@ -137,7 +137,7 @@ Use username and password to get an auth token, which is to access the PolyLogyx
 }
 ```
 
-### Logout from the PolyLogyx Server session
+### Logout from the EclecticIQ ER Server session
 Invalidates the platform user session by restricting the authentication of auth token.
 **URL:** https://<BASE_URL>/logout
 **Request Type:** POST
@@ -171,8 +171,8 @@ Example Payload Format
 }
 ```
 
-### View PolyLogyx Server Options
-Lists Options used by PolyLogyx Server.
+### View EclecticIQ ER Server Options
+Lists Options used by EclecticIQ ER Server.
 **URL:** https://<BASE_URL>/options
 **Request Type:** GET
 **Response:** Returns JSON array of status,message and data.
@@ -193,8 +193,8 @@ Lists Options used by PolyLogyx Server.
 }
 ```
 
-### Update/Add PolyLogyx Server Options
-Add or Update Options used by PolyLogyx Server.
+### Update/Add EclecticIQ ER Server Options
+Add or Update Options used by EclecticIQ ER Server.
 **URL:** https://<BASE_URL>/options/add
 **Request Type:** POST
 **Example Request Format:**
@@ -230,7 +230,7 @@ Add or Update Options used by PolyLogyx Server.
 ```
 
 ### View Threat Intel Keys
-Lists Threat Intel API keys used by PolyLogyx Server.
+Lists Threat Intel API keys used by EclecticIQ ER Server.
 **URL:** https://<BASE_URL>/management/apikeys
 **Request Type:** GET
 **Response:** Returns JSON array of status,message and data.
@@ -252,7 +252,7 @@ Lists Threat Intel API keys used by PolyLogyx Server.
 ```
 
 ### Add/Update Threat Intel Keys
-Updates Threat Intel API keys used by PolyLogyx Server.
+Updates Threat Intel API keys used by EclecticIQ ER Server.
 **URL:** https://<BASE_URL>/management/apikeys
 **Request Type:** POST
 **Example Request Format:**
@@ -282,8 +282,8 @@ Updates Threat Intel API keys used by PolyLogyx Server.
 }
 ```
 
-### View email sender and recipients used by PolyLogyx platform
-Lists the email configuration used by PolyLogyx platform user to send emails for alerts.
+### View email sender and recipients used by EclecticIQ ER platform
+Lists the email configuration used by EclecticIQ ER platform user to send emails for alerts.
 **URL:** https://<BASE_URL>/email/configure
 **Request Type:** GET
 **Response:** Returns JSON array of status,message and data.
@@ -304,7 +304,7 @@ Example Response
 ```
 
 ### Configure email sender and recipients for alerts
-Updates the email configuration used by PolyLogyx platform user to send emails for alerts.
+Updates the email configuration used by EclecticIQ ER platform user to send emails for alerts.
 **URL:** https://<BASE_URL>/email/configure
 **Request Type:** POST
 **Example Request Format:**

@@ -16,7 +16,7 @@ systems.
 Features 
 ---------
 
-Built using the form factor of [osquery](https://osquery.io/) agent that is extended using [PolyLogx Extension](https://github.com/polylogyx/osq-ext-bin), at a high-level the PolyLogyx platform provides these features.
+Built using the form factor of [osquery](https://osquery.io/) agent that is extended using [PolyLogx Extension](https://github.com/polylogyx/osq-ext-bin), at a high-level the EclecticIQ ER platform provides these features.
 
 ### Monitoring and visibility
 
