@@ -179,4 +179,4 @@ Event filtering is supported on following tables (and fields or columns).
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Client Configurations](../05_PolyLogyx_EclecticIQ_ER_Configurations/Readme.md)  | [Next >> Queries and Packs](../07_Queries_and_packs/Readme.md)|
+|[Previous << Client Configurations](../05_EclecticIQ_ER_Configurations/Readme.md)  | [Next >> Queries and Packs](../07_Queries_and_packs/Readme.md)|
