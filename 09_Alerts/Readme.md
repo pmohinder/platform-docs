@@ -78,8 +78,11 @@ Perform these steps to investigate an alert:
 
 Responding to Alerts
 --------------------
-Based on the alert severtity and importance, you can take needed actions for an alert. You can choose to ignore it or act on it. For more information, see [Responses](../11_Responses).  
+Based on the alert severity and importance, you can take needed actions for an alert. You can choose to ignore it or act on it. For more information, see [Responses](../11_Responses).  
 
+```
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
+```
 
 Closing Alerts
 --------------------

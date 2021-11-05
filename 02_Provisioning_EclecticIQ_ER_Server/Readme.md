@@ -43,12 +43,6 @@ following information.
 
     -   16 GB RAM (Use 64 GB RAM if number of suppoerted clients > 500)
 
--   Contact EclecticIQ to procure the following:
-
-    -   Server Docker image (plgx-esp.zip)
-
-    -   Clean-up script (docker-cleanup.sh)
-
 -   Docker and Docker Compose are required to install the EclecticIQ ER server.
 
 -   In-bound Ports 5000, 9000 and 443 are open on the system. Port 5000 is used for UI, 9000 and 443 for agent communication
@@ -128,7 +122,6 @@ server.
         .
         .
         .
-        API key is : <API_KEY>
         Server is up and running```
         
 6.  Log on to server using following URL using the latest version of Chrome or

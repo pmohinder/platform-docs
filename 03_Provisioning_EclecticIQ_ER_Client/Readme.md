@@ -21,7 +21,7 @@ Typically, deploying osquery and running it across your fleet can be a daunting 
 
 This chapter includes these topics:
 
--   [Installing the PolyLogyx Client](#installing-the-polylogyx-client)
+-   [Installing the EclecticIQ Client](#installing-the-polylogyx-client)
 
 -   [Uninstalling Client](#uninstalling-the-client)
 
@@ -47,9 +47,6 @@ Installing the EclecticIQ ER client involves these steps:
 ### Before you Begin
 
 Before you begin installation, ensure you complete the following prerequisites.
-
--   Procure the needed software by requesting the access from the [PolyLogyx
-    site](https://polylogyx.com/downloads).
 
 -   Provision a EclecticIQ ER server using a docker image. For more information, see
     [Provisioning the EclecticIQ ER Server](#getting-started).
@@ -80,7 +77,7 @@ Before you begin installation, ensure you complete the following prerequisites.
 
 To simplify the provisioning of the endpoints with osquery agent and PolyLogyx Extension (as applicable), 
 EclecticIQ ER provides a simplified tool known as CPT. The CPT for individual operating system could be
-downloaded from the web interface of the PEclecticIQ ER.
+downloaded from the web interface of the EclecticIQ ER.
 
 ![cpt](../images/download_cpt.png)
 
@@ -115,7 +112,7 @@ Here is an example of a remote command execution using PSEXEC.
 
 ``` psexec \\101.101.1.101 -u Administrator cmd /c dir C:\Users\Administrator\plgx_cpt.exe -p -i 11.111.111.11 -k c:\certificate.crt```
 
-The installation begins and the CPT utility brings the required artefacts on the
+The installation begins and the CPT utility brings the required artifacts on the
 endpoints. After installation is complete, the Polylogyx Osqueryd service and PolyLogyx
 extension are deployed and the osqueryd service starts. Also, EclecticIQ ER Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the EclecticIQ ER Agent service restarts it. The following output is
 displayed if the command is successful.
@@ -273,7 +270,7 @@ Deleting other files...Done
 Upgrading the Client 
 ---------------------
 
-Follow these steps to upgrade the PolyLogyx client.
+Follow these steps to upgrade the EclecticIQ client.
 
 1.  Open a command window with administrative privileges.
 
@@ -329,18 +326,18 @@ PolyLogyx Endpoint Platform services initialized.
 ########### Upgrade completed successfully ###########
 ```
 
-### Deploying the PolyLogyx Client on Linux
+### Deploying the EclecticIQ Client on Linux
 
-Use the PolyLogyx Client Provisioning Tool (CPT) binary to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) binary to deploy the PolyLogyx
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo  ./plgx_cpt -p -i < SERVER_IP(x.x.x.x) > -k < Full path to the certificate file >
 
 **NOTE**: Execution permission is required before executing the above command.
 
-### Deploying the PolyLogyx Client on MacOS
+### Deploying the EclecticIQ Client on MacOS
 
-Use the PolyLogyx Client Provisioning Tool (CPT) shell script to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) shell script to deploy the PolyLogyx
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo bash plgx_cpt.sh -p -i < SERVER_IP(x.x.x.x) >
@@ -409,7 +406,7 @@ privileges and sufficient arguments.
 
 ### Incorrect certificate file name or path
 
-If you execute the command to install the PolyLogyx client with an incorrect
+If you execute the command to install the EclecticIQ client with an incorrect
 certificate path, the UI show message below and will redirect to a log file path.
 
 ```Failed to read server's public key from input file: <cert_path>```
@@ -422,7 +419,7 @@ See log file for following error details.
 
 ### Invalid certificate
 
-If you execute the command to install the PolyLogyx client with administrative
+If you execute the command to install the EclecticIQ client with administrative
 privileges but with an invalid certificate, the UI show message below and will redirect to a log file path.
 
 ``` Downloadng files from server failed.```
@@ -435,7 +432,7 @@ See log file for following error details.
 
 ### Failed to configure Osquery
 
-If you try to install the PolyLogyx client when osquery already installed, the
+If you try to install the EclecticIQ client when osquery already installed, the
 following error message is displayed.
 
 ```
@@ -451,9 +448,9 @@ for error details.
     osquery. For more information, see [Uninstalling the
     Client](#uninstalling-the-client).
 
-2.  Execute the command to install the PolyLogyx client with administrative
+2.  Execute the command to install the EclecticIQ client with administrative
     rights and a valid certificate. For more information, see [Deploying the
-    PolyLogyx Client](#deploying-the-polylogyx-client).
+    EclecticIQ Client](#deploying-the-polylogyx-client).
 
 	
 |										|																							|
