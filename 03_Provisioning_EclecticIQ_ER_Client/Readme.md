@@ -21,7 +21,7 @@ Typically, deploying osquery and running it across your fleet can be a daunting 
 
 This chapter includes these topics:
 
--   [Installing the EclecticIQ Client](#installing-the-polylogyx-client)
+-   [Installing the EclecticIQ Client](#installing-the-eclecticiq-er-client)
 
 -   [Uninstalling Client](#uninstalling-the-client)
 
@@ -39,7 +39,7 @@ Installing the EclecticIQ ER client involves these steps:
     Begin](#before-you-begin-1) for more information.
 
 2.  Deploy the client. See [Deploying the EclecticIQ ER
-    Client](#deploying-the-polylogyx-client) for more information.
+    Client](#deploying-the-eclecticiq-er-client) for more information.
 
 3.  Verify if the installation was successful. See [Verifying Client
     Installation](#verifying-client-installation) for more information.
@@ -450,7 +450,7 @@ for error details.
 
 2.  Execute the command to install the EclecticIQ client with administrative
     rights and a valid certificate. For more information, see [Deploying the
-    EclecticIQ Client](#deploying-the-polylogyx-client).
+    EclecticIQ Client](#deploying-the-eclecticiq-er-client).
 
 	
 |										|																							|

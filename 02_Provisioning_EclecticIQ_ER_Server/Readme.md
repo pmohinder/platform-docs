@@ -17,7 +17,7 @@ This chapter includes these topics:
 
 -   [Before you Begin](#before-you-begin)
 
--   [Installing the EclecticIQ_ER Server](#installing-the-polylogyx-server)
+-   [Installing the EclecticIQ_ER Server](#installing-the-eclecticiq-er-server)
 
 -   [Uninstalling the Server](#uninstalling-the-server)
 
