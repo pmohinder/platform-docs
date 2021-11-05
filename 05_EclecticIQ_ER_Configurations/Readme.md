@@ -15,7 +15,7 @@ The osquery.flags file includes all the parameters needed for osquery initializa
 
 Although this file contains all the flags supported by osquery, in this section, we will discuss only the key flags that are relevant for the EclecticIQ ER platform. 
 
-Update the parameters to configure the deployment environment to meet your specific needs. Note that modifying these values may significantly alter the performance of the endpoint agent. These configured values are passed to the endpoint agent during the [client provisioning](https://github.com/polylogyx/platform-docs/03_Provisioning_EclecticIQ_ER_Client#provisioning-the-eclecticiq-er-client-for-endpoints) through the osquery.flags file.
+Update the parameters to configure the deployment environment to meet your specific needs. Note that modifying these values may significantly alter the performance of the endpoint agent. These configured values are passed to the endpoint agent during the [client provisioning](../03_Provisioning_EclecticIQ_ER_Client#provisioning-the-eclecticiq-er-client-for-endpoints) through the osquery.flags file.
 
 
 | Flag | Description                                                                                                                                                                                 |
@@ -40,7 +40,7 @@ For Windows x64 systems, EclecticIQ ER is shipped with 2 types of pre-baked conf
 
 ![deep_shallow_config](../images/config_deep_shallow.png)
 
-For more information on scheduled queries, see  [Scheduled Queries](https://github.com/polylogyx/platform-docs/06_Queries_and_packs#scheduled-queries). 
+For more information on scheduled queries, see  [Scheduled Queries](../06_Queries_and_packs#scheduled-queries). 
     
 Perform these steps to view or edit defined filters:
 1. Access the web interface for the server.
@@ -60,7 +60,7 @@ Perform these steps to view or edit defined filters:
    ![tree_view1](../images/tree_view1.png)
 7. Optionally, switch to the Code view to edit or define new filters, as needed.      
  
-   For more information on filters, review the  [Understanding Filters](https://github.com/polylogyx/platform-docs/05_Understanding_Filters) section.
+   For more information on filters, review the  [Understanding Filters](../06_Understanding_Filters) section.
 
 8. Click Update to save your changes. 
 

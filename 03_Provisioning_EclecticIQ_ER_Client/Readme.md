@@ -36,10 +36,10 @@ Installing the EclecticIQ ER Client
 Installing the EclecticIQ ER client involves these steps:
 
 1.  Complete the needed prerequisites. See [Before you
-    Begin](#before-you-begin-1) for more information.
+    Begin](#before-you-begin) for more information.
 
 2.  Deploy the client. See [Deploying the EclecticIQ ER
-    Client](#deploying-the-eclecticiq-er-client) for more information.
+    Client](#deploying-the-eclecticiq-er-client-for-windows) for more information.
 
 3.  Verify if the installation was successful. See [Verifying Client
     Installation](#verifying-client-installation) for more information.
@@ -49,7 +49,7 @@ Installing the EclecticIQ ER client involves these steps:
 Before you begin installation, ensure you complete the following prerequisites.
 
 -   Provision a EclecticIQ ER server using a docker image. For more information, see
-    [Provisioning the EclecticIQ ER Server](#getting-started).
+    [Provisioning the EclecticIQ ER Server](../02_Provisioning_EclecticIQ_ER_Server#getting-started).
 
 -   Ensure you have working knowledge of osquery. If not, please read about
     [osquery](https://osquery.io/).
