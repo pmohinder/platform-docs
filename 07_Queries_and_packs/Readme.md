@@ -47,7 +47,7 @@ The following diagram depicts the high-level query workflow.
 3.	Query results can be viewed on the UI or by using APIs.
 Steps 1, 2 and 3 apply to scheduled queries, query packs, and queries. Step 2 isn’t performed for Live queries. 
 
-The client database can store up to 2500 events. If it receives more events, events older than an hour are deleted. These values are configurable. See [Configuring the EclecticIQ ER Client](../04_PolyLogyx_Client_Configurations/Readme.md) for more information. 
+The client database can store up to 2500 events. If it receives more events, events older than an hour are deleted. These values are configurable. See [Configuring the EclecticIQ ER Client](../04_EclecticIQ_ER_Client_Configurations/Readme.md) for more information. 
    
 Types of Queries
 -------------------- 
