@@ -40,7 +40,7 @@ For Windows x64 systems, EclecticIQ ER is shipped with 2 types of pre-baked conf
 
 ![deep_shallow_config](../images/config_deep_shallow.png)
 
-For more information on scheduled queries, see  [Scheduled Queries](../06_Queries_and_packs#scheduled-queries). 
+For more information on scheduled queries, see  [Scheduled Queries](../07_Queries_and_packs#scheduled-queries). 
     
 Perform these steps to view or edit defined filters:
 1. Access the web interface for the server.

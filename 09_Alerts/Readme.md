@@ -74,7 +74,7 @@ Perform these steps to investigate an alert:
     
     This depicts the process hierarchy of the process associated with the alert and its activities.
     
-6.  Optionally, run a [Live query](../06_Queries_and_packs#live-queries) to fetch immediate results for the endpoint. 
+6.  Optionally, run a [Live query](../07_Queries_and_packs#live-queries) to fetch immediate results for the endpoint. 
 
 Responding to Alerts
 --------------------
