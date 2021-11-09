@@ -6,7 +6,7 @@ You can review, push, and and manage queries from the UI or by using APIs. This 
    
 Query Structure
 --------------------
-All queries you define or use in the PolyLogyx framework are defined using JSON syntax. 
+All queries you define or use in the EclecticIQ platform are defined using JSON syntax. 
 Here is format used to define queries.
 
 ```
@@ -82,7 +82,7 @@ Perform these steps to view or edit scheduled queries:
 
 Query Packs
 --------------------
-By default, few packs are included with your PolyLogyx configuration.  You can add more packs, as needed, to meet your requirements. 
+By default, few packs are included with your EclecticIQ platform.  You can add more packs, as needed, to meet your requirements. 
 
 ### Manage Existing Packs 
 Perform these steps to view and edit packs:
@@ -122,7 +122,7 @@ Perform these steps to add a new query pack.
 
 Queries
 --------------------
-By default, multiple predefined queries are included with your PolyLogyx configuration. These are defined but not assigned to any nodes by default. 
+By default, multiple predefined queries are included with your client configuration. These are defined but not assigned to any nodes by default. 
 
 ### Manage Defined Queries 
 Perform these steps to view or run a predefined query.

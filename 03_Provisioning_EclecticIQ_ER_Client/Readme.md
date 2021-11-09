@@ -64,7 +64,7 @@ Before you begin installation, ensure you complete the following prerequisites.
 	
     -   Do not have these installed:
 
-        -   PolyLogyx Extension version older than 1.0.35.15 on Windows
+        -   The Extension version older than 1.0.35.15 on Windows
 		-   Osquery agent on Linux/MacOS
 
     -   Do not have host-based firewalls or other security tools that might
@@ -75,7 +75,7 @@ Before you begin installation, ensure you complete the following prerequisites.
 
 ### EclecticIQ ER Client Provisioning Tool (CPT)
 
-To simplify the provisioning of the endpoints with osquery agent and PolyLogyx Extension (as applicable), 
+To simplify the provisioning of the endpoints with osquery agent and the Extension (as applicable), 
 EclecticIQ ER provides a simplified tool known as CPT. The CPT for individual operating system could be
 downloaded from the web interface of the EclecticIQ ER.
 
@@ -113,7 +113,7 @@ Here is an example of a remote command execution using PSEXEC.
 ``` psexec \\101.101.1.101 -u Administrator cmd /c dir C:\Users\Administrator\plgx_cpt.exe -p -i 11.111.111.11 -k c:\certificate.crt```
 
 The installation begins and the CPT utility brings the required artifacts on the
-endpoints. After installation is complete, the Polylogyx Osqueryd service and PolyLogyx
+endpoints. After installation is complete, the osqueryd service and the
 extension are deployed and the osqueryd service starts. Also, EclecticIQ ER Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the EclecticIQ ER Agent service restarts it. The following output is
 displayed if the command is successful.
 

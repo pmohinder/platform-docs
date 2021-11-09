@@ -8,7 +8,7 @@ processes, installed applications, hardware properties, and network connections.
 As a result, you can run simple SQL queries to simple gain visibility for a
 *point in time* view of the endpoint node.
 
-PolyLogyx has extended and optimized osquery to support detection and response
+EclecticIQ ER client has extended and optimized osquery to support detection and response
 use cases by adding new tables (see below). Where required, the tables are real
 time (evented) in nature to ensure all activity is captured for analysis and
 investigation.
@@ -416,7 +416,7 @@ Captures the yara matches based on input rules.
 osquery Tables
 --------------
 
-This release of the EclecticIQ ER Endpoint Platform embeds osquery v4.3.0. PolyLogyx
+This release of the EclecticIQ ER Endpoint Platform embeds osquery v4.3.0. EclecticIQ
 will make a concerted effort to ensure that we leverage the latest, stable
 version of osquery. For more information on base osquery tables and schema,
 refer to <https://osquery.io/schema/>*.*

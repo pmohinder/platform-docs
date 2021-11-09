@@ -20,9 +20,9 @@ Update the parameters to configure the deployment environment to meet your speci
 
 | Flag | Description                                                                                                                                                                                 |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| extensions_autoload=C:\Program Files\plgx_osquery\extensions.load | Informs the osquery agent to load an extension during osquery initialization. The extensions.load contains the location to the PolyLogyx Extension file. We recommended that you DO NOT change this flag.                                                                                                                                  |
+| extensions_autoload=C:\Program Files\plgx_osquery\extensions.load | Informs the osquery agent to load an extension during osquery initialization. The extensions.load contains the location to the Extension file. We recommended that you DO NOT change this flag.                                                                                                                                  |
 | extensions_interval=10 <br> extensions_timeout=90 <br> extensions_require=plgx_win_extension <br> allow_unsafe | Control the extension loading behavior of the osquery agent. We recommended that you DO NOT change this flag. |
-| disable_watchdog=true <br> watchdog_level=-1 | PolyLogyx Extension is a real-time event monitor on the endpoint. Real time monitoring can be voluminous and query paths to the tables where those events are recorded could surpass the default performance constraints imposed by osquery on its child processes and threads. It is therefore recommended to turn off those constraints for better stability.|
+| disable_watchdog=true <br> watchdog_level=-1 | Extension is a real-time event monitor on the endpoint. Real time monitoring can be voluminous and query paths to the tables where those events are recorded could surpass the default performance constraints imposed by osquery on its child processes and threads. It is therefore recommended to turn off those constraints for better stability.|
 | events_max=1500 <br> events_expiry=3600 | Manage the history of real time events recorded on the endpoint. By default, up to 2500 events are recorded and when the count is hit, all the events that are older than 3600 seconds are purged from the local database. Altering these values can cause performance impact on queries. | 
 | config_tls_refresh=300 | Controls the refresh interval for agent configuration. Any changes to the agent configuration (as defined below) will get picked by the agent after this interval.|
 
@@ -31,7 +31,7 @@ Predefined filters and queries
 ---------------
 As soon as an agent checks-in with the server, a default configuration is applied to the agent based on the operating system of the endpoint. The configuration contains the list of scheduled queries and filters that are applied on the agent.
 
-For the Windows operating system, PolyLogyx Extension is part of the agent and therefore the configuration includes the following:
+For the Windows operating system, the extension is part of the agent and therefore the configuration includes the following:
     a. Additional filtering criteria to eliminate <i>white noise</i> from the real-time telemetry. 
     b. Set of scheduled queries that captures all the process creation and network connections data from the endpoint. 
     The configurations are editable and the changes in the configuration are picked up by the endpoint based on the <i>config_tls_refresh</i> value in the osquery.flags file.

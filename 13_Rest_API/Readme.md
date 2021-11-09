@@ -71,7 +71,7 @@ EclecticIQ ER will derive client request context directly from the HTTP request
 headers and client TCP socket. Request context is used to evaluate policies and
 provide client information for troubleshooting and auditing purposes.
 
--   User Agent - PolyLogyx supports the standard User-Agent HTTP header to
+-   User Agent - EclecticIQ ER supports the standard User-Agent HTTP header to
     identify the client application. Always send a User-Agent string to uniquely
     identify your client application and version such as SOC Application/1.1.
 
