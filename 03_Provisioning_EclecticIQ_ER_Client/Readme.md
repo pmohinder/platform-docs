@@ -58,7 +58,7 @@ Before you begin installation, ensure you complete the following prerequisites.
 
     -   Support 64-bit architecture on Windows 7 and above, Linux and MacOS
 
-		-   For Windows 7 or later operating system installed as specified [here](https://github.com/polylogyx/osq-ext-bin)
+		-   For Windows 7 or later operating system installed as specified [here](https://github.com/EclecticIQ/osq-ext-bin)
 
 	-   Support 32-bit architecture on Windows platforms only (Windows 7 and above)
 	
@@ -121,8 +121,8 @@ displayed if the command is successful.
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ```
 ### Deploying the EclecticIQ ER CPT on Windows by GPO
@@ -251,7 +251,7 @@ The following output is displayed if the `plgx_cpt.exe -u d` command is successf
 
 ```
 ########### Deep uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Deleting Install directory...Done
 Deleting other files...Done
 ########### Deep uninstall completed successfully ###########
@@ -261,7 +261,7 @@ The following output is displayed if the `plgx_cpt.exe -u s` command is successf
 
 ```
 ########### Shallow uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Cleaning installed files...Done
 Deleting other files...Done
 ########### Shallow uninstall completed successfully ###########
@@ -295,15 +295,15 @@ The following output is displayed if the `plgx_cpt.exe -g d` command is successf
 ```
 ########### Upgrade started ###########
 ########### Deep uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Deleting Install directory...Done
 Deleting other files...Done
 ########### Deep uninstall completed successfully ###########
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ########### Upgrade completed successfully ###########
 ```
@@ -313,22 +313,22 @@ The following output is displayed if the `plgx_cpt.exe -g s` command is successf
 ```
 ########### Upgrade started ###########
 ########### Shallow uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Cleaning installed files...Done
 Deleting other files...Done
 ########### Shallow uninstall completed successfully ###########
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ########### Upgrade completed successfully ###########
 ```
 
 ### Deploying the EclecticIQ Client on Linux
 
-Use the EclecticIQ Client Provisioning Tool (CPT) binary to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) binary to deploy the EclecticiIQ 
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo  ./plgx_cpt -p -i < SERVER_IP(x.x.x.x) > -k < Full path to the certificate file >
@@ -337,7 +337,7 @@ sudo  ./plgx_cpt -p -i < SERVER_IP(x.x.x.x) > -k < Full path to the certificate 
 
 ### Deploying the EclecticIQ Client on MacOS
 
-Use the EclecticIQ Client Provisioning Tool (CPT) shell script to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) shell script to deploy the EclecticIQ ER
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo bash plgx_cpt.sh -p -i < SERVER_IP(x.x.x.x) >
@@ -436,7 +436,7 @@ If you try to install the EclecticIQ client when osquery already installed, the
 following error message is displayed.
 
 ```
-Polylogyx Agent is already installed, please uninstall before proceeding.
+EclecticIQ Agent is already installed, please uninstall before proceeding.
 Use plgx_cpt -u <d / s> option for uninstall.
 Refer help for options, or, log file C:\plgx-temp\plgx_cpt.log.<hostname>.<date_timestamp> 
 for error details.
