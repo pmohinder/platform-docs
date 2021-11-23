@@ -1,11 +1,11 @@
 File Acquisition (Carves)
 ======================
 
-For investigative purposes, you can fetch any file from the managed endpoints to the PolyLogyx server. You can fetch files by using Live queries. You can fetch a single file or a batch of files based on specified criteria. 
+For investigative purposes, you can fetch any file from the managed endpoints to the EclecticIQ ER server. You can fetch files by using Live queries. You can fetch a single file or a batch of files based on specified criteria. 
 
 Perform these steps to acquire files.
 
-1. Run a [Live query](../06_Queries_and_packs#live-queries). 
+1. Run a [Live query](../07_Queries_and_packs#live-queries). 
 2. On the Live Query Builder page, specify the query. 
 
     1. To fetch a single file from an endpoint, use the following syntax to build your query. 

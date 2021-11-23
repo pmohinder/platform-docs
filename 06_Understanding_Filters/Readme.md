@@ -1,7 +1,7 @@
 Understanding Filters
 ======================
 
-By default, the PolyLogyx client is designed to capture system events in
+By default, the EclecticIQ ER client is designed to capture system events in
 real-time for a variety of system activities. Also, it makes the telemetry
 available through a flexible SQL syntax.
 
@@ -24,7 +24,7 @@ additional filters.
 Filter Types
 ------------
 
-Using filters, you can configure the PolyLogyx client to capture only data
+Using filters, you can configure the EclecticIQ ER client to capture only data
 relevant to you. You can choose to include relevant data and exclude
 non-meaningful data. In effect you can define these type of filters:
 
@@ -179,4 +179,4 @@ Event filtering is supported on following tables (and fields or columns).
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Client Configurations](../05_PolyLogyx_Client_Configurations/Readme.md)  | [Next >> Queries and Packs](../07_Queries_and_packs/Readme.md)|
+|[Previous << Client Configurations](../05_EclecticIQ_ER_Configurations/Readme.md)  | [Next >> Queries and Packs](../07_Queries_and_packs/Readme.md)|

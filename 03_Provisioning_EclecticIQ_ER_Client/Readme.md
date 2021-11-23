@@ -1,9 +1,9 @@
-Provisioning the PolyLogyx Client for Endpoints
+Provisioning the EclecticIQ ER Client for Endpoints
 ================================================
 
-The PolyLogyx client that is a part of the PolyLogyx endpoint platform,
+The EclecticIQ ER client that is a part of the EclecticIQ ER platform,
 leverages osquery, a multi-platform operating system monitoring and
-instrumentation framework. Here are the features the PolyLogyx client offers:
+instrumentation framework. Here are the features the EclecticIQ ER client offers:
 
 -   Compliance (PCI, HIPAA)
 
@@ -17,11 +17,11 @@ instrumentation framework. Here are the features the PolyLogyx client offers:
 
 -   Performance and operational troubleshooting
 
-Typically, deploying osquery and running it across your fleet can be a daunting and complicated task, because of its large configuration surface and option.  To simplify the deployment of PolyLogyx osquery based agent, the platform is shipped with a Client Provisioning Tool (CPT) that wraps all the necessary configuration and makes the client provisioning process extremely simplified. 
+Typically, deploying osquery and running it across your fleet can be a daunting and complicated task, because of its large configuration surface and option.  To simplify the deployment of EclecticIQ ER osquery based agent, the platform is shipped with a Client Provisioning Tool (CPT) that wraps all the necessary configuration and makes the client provisioning process extremely simplified. 
 
 This chapter includes these topics:
 
--   [Installing the PolyLogyx Client](#installing-the-polylogyx-client)
+-   [Installing the EclecticIQ Client](#installing-the-eclecticiq-er-client)
 
 -   [Uninstalling Client](#uninstalling-the-client)
 
@@ -30,16 +30,16 @@ This chapter includes these topics:
 -   [Troubleshooting Client Installation
     Issues](#troubleshooting-client-installation-issues)
 
-Installing the PolyLogyx Client 
+Installing the EclecticIQ ER Client 
 --------------------------------
 
-Installing the PolyLogyx client involves these steps:
+Installing the EclecticIQ ER client involves these steps:
 
 1.  Complete the needed prerequisites. See [Before you
-    Begin](#before-you-begin-1) for more information.
+    Begin](#before-you-begin) for more information.
 
-2.  Deploy the client. See [Deploying the PolyLogyx
-    Client](#deploying-the-polylogyx-client) for more information.
+2.  Deploy the client. See [Deploying the EclecticIQ ER
+    Client](#deploying-the-eclecticiq-er-client-for-windows) for more information.
 
 3.  Verify if the installation was successful. See [Verifying Client
     Installation](#verifying-client-installation) for more information.
@@ -48,11 +48,8 @@ Installing the PolyLogyx client involves these steps:
 
 Before you begin installation, ensure you complete the following prerequisites.
 
--   Procure the needed software by requesting the access from the [PolyLogyx
-    site](https://polylogyx.com/downloads).
-
--   Provision a PolyLogyx server using a docker image. For more information, see
-    [Provisioning the PolyLogyx Server](#getting-started).
+-   Provision a EclecticIQ ER server using a docker image. For more information, see
+    [Provisioning the EclecticIQ ER Server](../02_Provisioning_EclecticIQ_ER_Server#getting-started).
 
 -   Ensure you have working knowledge of osquery. If not, please read about
     [osquery](https://osquery.io/).
@@ -61,13 +58,13 @@ Before you begin installation, ensure you complete the following prerequisites.
 
     -   Support 64-bit architecture on Windows 7 and above, Linux and MacOS
 
-		-   For Windows 7 or later operating system installed as specified [here](https://github.com/polylogyx/osq-ext-bin)
+		-   For Windows 7 or later operating system installed as specified [here](https://github.com/EclecticIQ/osq-ext-bin)
 
 	-   Support 32-bit architecture on Windows platforms only (Windows 7 and above)
 	
     -   Do not have these installed:
 
-        -   PolyLogyx Extension version older than 1.0.35.15 on Windows
+        -   The Extension version older than 1.0.35.15 on Windows
 		-   Osquery agent on Linux/MacOS
 
     -   Do not have host-based firewalls or other security tools that might
@@ -76,20 +73,20 @@ Before you begin installation, ensure you complete the following prerequisites.
     -   Allow outbound TCP traffic on port 9000
 
 
-### PolyLogyx Client Provisioning Tool (CPT)
+### EclecticIQ ER Client Provisioning Tool (CPT)
 
-To simplify the provisioning of the endpoints with osquery agent and PolyLogyx Extension (as applicable), 
-PolyLogyx ESP provides a simplified tool known as CPT. The CPT for individual operating system could be
-downloaded from the web interface of the PolyLogyx ESP.
+To simplify the provisioning of the endpoints with osquery agent and the Extension (as applicable), 
+EclecticIQ ER provides a simplified tool known as CPT. The CPT for individual operating system could be
+downloaded from the web interface of the EclecticIQ ER.
 
 ![cpt](../images/download_cpt.png)
 
 The following sections provide details on deploying the agent using CPT on different platforms.
 
 	
-### Deploying the PolyLogyx Client on Windows
+### Deploying the EclecticIQ ER Client on Windows
 
-Use the PolyLogyx Client Provisioning Tool (CPT) utility to deploy the PolyLogyx
+Use the EclecticIQ ER Client Provisioning Tool (CPT) utility to deploy the EclecticIQ ER
 client on endpoints. After you identify endpoints on which to deploy the client,
 push the CPT utility and public key file to the endpoints using any standard
 mechanism, such as SCCM.
@@ -106,7 +103,7 @@ Here is the syntax description.
 | Parameter | Description                                                                                                                                                                                  |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \-p       | Signifies the option for provisioning the client                                                                                                                          |
-| \-i or -h | Specify one of the following. This is a required parameter. -i represents the IP address of the PolyLogyx management server (x.x.x.x format). -h represents the fully qualified domain name to the management server in the format a.b.c. You don’t need to https.                                                                                                                              |
+| \-i or -h | Specify one of the following. This is a required parameter. -i represents the IP address of the EclecticIQ ER management server (x.x.x.x format). -h represents the fully qualified domain name to the management server in the format a.b.c. You don’t need to https.                                                                                                                              |
 | \-k       | Indicates the full path to the server public key file. This is a required parameter.                                                                                                         |
 | \-o       | Indicates the location at which to download. The default value is c:\\plgx-temp\\. This is an optional parameter.                                                                            |
 | \-y       | Indicates the yara refresh interval in seconds for downloading signature files from server.                                                                            |
@@ -115,35 +112,35 @@ Here is an example of a remote command execution using PSEXEC.
 
 ``` psexec \\101.101.1.101 -u Administrator cmd /c dir C:\Users\Administrator\plgx_cpt.exe -p -i 11.111.111.11 -k c:\certificate.crt```
 
-The installation begins and the CPT utility brings the required artefacts on the
-endpoints. After installation is complete, the Polylogyx Osqueryd service and PolyLogyx
-extension are deployed and the osqueryd service starts. Also, PolyLogyx Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the PolyLogyx Agent service restarts it. The following output is
+The installation begins and the CPT utility brings the required artifacts on the
+endpoints. After installation is complete, the osqueryd service and the
+extension are deployed and the osqueryd service starts. Also, EclecticIQ ER Agent is installed as a Windows service and it acts as a watcher for osqueryd service. If the osqueryd service stops, the EclecticIQ ER Agent service restarts it. The following output is
 displayed if the command is successful.
 
 ```
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ```
-### Deploying the PolyLogyx CPT on Windows by GPO
+### Deploying the EclecticIQ ER CPT on Windows by GPO
 
-Group Policy Object (GPO) deployment involves created 'scheduled task' that will periodically connect to a network folder location and run Install.bat to install PolyLogyx CPT.
+Group Policy Object (GPO) deployment involves created 'scheduled task' that will periodically connect to a network folder location and run Install.bat to install EclecticIQ ER CPT.
 
-Using Microsoft Group Policy to deploy PolyLogyx CPT requires two main things:
+Using Microsoft Group Policy to deploy EclecticIQ ER CPT requires two main things:
 - A shared location to store executables and certificate.
 - A Group Policy Object (GPO) to create a scheduled task.
 
 #### Folder Layout
-A centralised network folder accessible by all machines that are going to be running PolyLogyx CPT is needed. We suggest inside the sysvol directory as a suitable place since this is configured by default to have very restricted write permissions. It is important that the folder contents cannot be modified by users, hence recommending Sysvol folder!
+A centralised network folder accessible by all machines that are going to be running EclecticIQ ER CPT is needed. We suggest inside the sysvol directory as a suitable place since this is configured by default to have very restricted write permissions. It is important that the folder contents cannot be modified by users, hence recommending Sysvol folder!
 
 You will need to download the below files and copy them to an appropriate location such as sysvol located at ``\\%YourDomainName%\sysvol\%YourDomainName%\plgx``
 
-- plgx_cpt.exe - From PolyLogyx ESP Server 
-- certificate.crt - From PolyLogyx ESP Server
-- Install.bat - From [here](../files/GPO%20Deployment/Install.bat) & update the file with PolyLogyx ESP Server IP address
+- plgx_cpt.exe - From EclecticIQ ER Server 
+- certificate.crt - From EclecticIQ ER Server
+- Install.bat - From [here](../files/GPO%20Deployment/Install.bat) & update the file with EclecticIQ ER Server IP address
 
 Looking in the sysvol folder you should now be able to see similar to below.
 ![plgx](../images/plgx_gpo.PNG)
@@ -161,8 +158,8 @@ For example \\\testing.com\SYSVOL\testing.com\plgx\Install.bat
 
 ### Verifying Client Installation 
 
-After you deploy the PolyLogyx client, complete these steps to verify the
-installation. When the PolyLogyx client is installed successfully, the following
+After you deploy the EclecticIQ ER client, complete these steps to verify the
+installation. When the EclecticIQ ER client is installed successfully, the following
 processes/services start:
 
 1.  plgx_osqueryd service
@@ -184,7 +181,7 @@ Follow these steps to check if the required processes are running.
 2.  Switch to "c:\Program Files\plgx_osquery" folder in command prompt.
 
 3.  Run the following command to check the state of software stack, including
-    osquery, PolyLogyx Extension and associated services.
+    osquery, EclecticIQ ER Extension and associated services.
 
 ```plgx_cpt.exe –c```
 
@@ -222,7 +219,7 @@ Service plgx_cpt up and running.
 Uninstalling the Client
 -----------------------
 
-Follow these steps to uninstall the PolyLogyx client.
+Follow these steps to uninstall the EclecticIQ ER client.
 
 1.  Open a command window with administrative privileges.
 
@@ -254,7 +251,7 @@ The following output is displayed if the `plgx_cpt.exe -u d` command is successf
 
 ```
 ########### Deep uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Deleting Install directory...Done
 Deleting other files...Done
 ########### Deep uninstall completed successfully ###########
@@ -264,7 +261,7 @@ The following output is displayed if the `plgx_cpt.exe -u s` command is successf
 
 ```
 ########### Shallow uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Cleaning installed files...Done
 Deleting other files...Done
 ########### Shallow uninstall completed successfully ###########
@@ -273,7 +270,7 @@ Deleting other files...Done
 Upgrading the Client 
 ---------------------
 
-Follow these steps to upgrade the PolyLogyx client.
+Follow these steps to upgrade the EclecticIQ client.
 
 1.  Open a command window with administrative privileges.
 
@@ -298,15 +295,15 @@ The following output is displayed if the `plgx_cpt.exe -g d` command is successf
 ```
 ########### Upgrade started ###########
 ########### Deep uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Deleting Install directory...Done
 Deleting other files...Done
 ########### Deep uninstall completed successfully ###########
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ########### Upgrade completed successfully ###########
 ```
@@ -316,31 +313,31 @@ The following output is displayed if the `plgx_cpt.exe -g s` command is successf
 ```
 ########### Upgrade started ###########
 ########### Shallow uninstall started ###########
-Stopping Polylogyx Endpoint Platform services...Done
+Stopping EclecticIQ Endpoint Platform services...Done
 Cleaning installed files...Done
 Deleting other files...Done
 ########### Shallow uninstall completed successfully ###########
 ########### Installation operation started ###########
 Downloading files...Done
 Installing files...Done
-Verifying PolyLogyx Endpoint Platform services are up and running....
-PolyLogyx Endpoint Platform services initialized.
+Verifying EclecticIQ Endpoint Platform services are up and running....
+EclecticIQ Endpoint Platform services initialized.
 ########### Installation operation completed successfully ###########
 ########### Upgrade completed successfully ###########
 ```
 
-### Deploying the PolyLogyx Client on Linux
+### Deploying the EclecticIQ Client on Linux
 
-Use the PolyLogyx Client Provisioning Tool (CPT) binary to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) binary to deploy the EclecticiIQ 
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo  ./plgx_cpt -p -i < SERVER_IP(x.x.x.x) > -k < Full path to the certificate file >
 
 **NOTE**: Execution permission is required before executing the above command.
 
-### Deploying the PolyLogyx Client on MacOS
+### Deploying the EclecticIQ Client on MacOS
 
-Use the PolyLogyx Client Provisioning Tool (CPT) shell script to deploy the PolyLogyx
+Use the EclecticIQ Client Provisioning Tool (CPT) shell script to deploy the EclecticIQ ER
 client on endpoints. The following command can be invoked to deploy the client.
 
 sudo bash plgx_cpt.sh -p -i < SERVER_IP(x.x.x.x) >
@@ -409,7 +406,7 @@ privileges and sufficient arguments.
 
 ### Incorrect certificate file name or path
 
-If you execute the command to install the PolyLogyx client with an incorrect
+If you execute the command to install the EclecticIQ client with an incorrect
 certificate path, the UI show message below and will redirect to a log file path.
 
 ```Failed to read server's public key from input file: <cert_path>```
@@ -422,7 +419,7 @@ See log file for following error details.
 
 ### Invalid certificate
 
-If you execute the command to install the PolyLogyx client with administrative
+If you execute the command to install the EclecticIQ client with administrative
 privileges but with an invalid certificate, the UI show message below and will redirect to a log file path.
 
 ``` Downloadng files from server failed.```
@@ -435,11 +432,11 @@ See log file for following error details.
 
 ### Failed to configure Osquery
 
-If you try to install the PolyLogyx client when osquery already installed, the
+If you try to install the EclecticIQ client when osquery already installed, the
 following error message is displayed.
 
 ```
-Polylogyx Agent is already installed, please uninstall before proceeding.
+EclecticIQ Agent is already installed, please uninstall before proceeding.
 Use plgx_cpt -u <d / s> option for uninstall.
 Refer help for options, or, log file C:\plgx-temp\plgx_cpt.log.<hostname>.<date_timestamp> 
 for error details.
@@ -451,11 +448,11 @@ for error details.
     osquery. For more information, see [Uninstalling the
     Client](#uninstalling-the-client).
 
-2.  Execute the command to install the PolyLogyx client with administrative
+2.  Execute the command to install the EclecticIQ client with administrative
     rights and a valid certificate. For more information, see [Deploying the
-    PolyLogyx Client](#deploying-the-polylogyx-client).
+    EclecticIQ Client](#deploying-the-eclecticiq-er-client).
 
 	
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Provisioning the PolyLogyx Server](../02_Provisioning_Polylogyx_Server/Readme.md)  | [Next >> Configuring the server](../04_PolyLogyx_Server_Configurations/Readme.md)|
+|[Previous << Provisioning the EclecticIQ ER Server](../02_Provisioning_EclecticIQ_ER_Server/Readme.md)  | [Next >> Configuring the server](../04_EclecticIQ_ER_Configurations/Readme.md)|

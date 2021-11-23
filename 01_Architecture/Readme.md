@@ -9,4 +9,4 @@ components.
 
 |										|																							|
 |:---									|													   								    ---:|
-|[Previous << Introduction](Readme.md)  | [Next >> Provisioning the PolyLogyx Server](../02_Provisioning_Polylogyx_Server/Readme.md)|
+|[Previous << Introduction](Readme.md)  | [Next >> Provisioning the EclecticIQ ER Server](../02_Provisioning_EclecticIQ_ER_Server/Readme.md)|

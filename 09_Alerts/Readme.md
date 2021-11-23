@@ -10,7 +10,7 @@ Review Alerts Traffic
 --------------------
 
 ```diff
-! Only available in the Enterprise Edition of the PolyLogyx ESP. !
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
 ```
 On the Alerts page, review the event timeline for your enterprise on the top bar to review the traffic trend. Each cluster on the timeline represents a collection of alerts. Hover over a cluster to see its details. Click on the event cluster to see the alerts present in that cluster.
 
@@ -37,7 +37,7 @@ Perform these steps to review alert information:
 Investigating Alerts
 --------------------
 ```diff
-! Only available in the Enterprise Edition of the PolyLogyx ESP. !
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
 ```
 
 Deep dive or investigate an alert to determine the actions you might need to take. 
@@ -74,12 +74,15 @@ Perform these steps to investigate an alert:
     
     This depicts the process hierarchy of the process associated with the alert and its activities.
     
-6.  Optionally, run a [Live query](../06_Queries_and_packs#live-queries) to fetch immediate results for the endpoint. 
+6.  Optionally, run a [Live query](../07_Queries_and_packs#live-queries) to fetch immediate results for the endpoint. 
 
 Responding to Alerts
 --------------------
-Based on the alert severtity and importance, you can take needed actions for an alert. You can choose to ignore it or act on it. For more information, see [Responses](../11_Responses).  
+Based on the alert severity and importance, you can take needed actions for an alert. You can choose to ignore it or act on it. For more information, see [Responses](../11_Responses).  
 
+```
+! Only available in the Enterprise Edition of the EclecticIQ ER. !
+```
 
 Closing Alerts
 --------------------

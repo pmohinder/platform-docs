@@ -1,12 +1,12 @@
 Using Queries
 ===================================
 A query is a request for data or information from a database table or combination of tables. 
-After the PolyLogyx client is provisioned, seeded queries are run on the managed endpoints and the fetched data is stored in the database on the PolyLogyx server. This data stored in [various tables](../12_Tables/Readme.md) and can be viewed or searched.
+After the EclecticIQ ER client is provisioned, seeded queries are run on the managed endpoints and the fetched data is stored in the database on the EclecticIQ ER server. This data stored in [various tables](../12_Tables/Readme.md) and can be viewed or searched.
 You can review, push, and and manage queries from the UI or by using APIs. This topic describes how to manage queries using the UI. For more information on managing queries using API, see [Rest APIs](../13_Rest_API/Readme.md).
    
 Query Structure
 --------------------
-All queries you define or use in the PolyLogyx framework are defined using JSON syntax. 
+All queries you define or use in the EclecticIQ platform are defined using JSON syntax. 
 Here is format used to define queries.
 
 ```
@@ -47,7 +47,7 @@ The following diagram depicts the high-level query workflow.
 3.	Query results can be viewed on the UI or by using APIs.
 Steps 1, 2 and 3 apply to scheduled queries, query packs, and queries. Step 2 isn’t performed for Live queries. 
 
-The client database can store up to 2500 events. If it receives more events, events older than an hour are deleted. These values are configurable. See [Configuring the PolyLogyx Client](../04_PolyLogyx_Client_Configurations/Readme.md) for more information. 
+The client database can store up to 2500 events. If it receives more events, events older than an hour are deleted. These values are configurable. See [Configuring the EclecticIQ ER Client](../05_EclecticIQ_ER_Client_Configurations/Readme.md) for more information. 
    
 Types of Queries
 -------------------- 
@@ -55,7 +55,7 @@ Here are the types of queries you can use.
 
 | Type              | Description                                                                                                                                                                                                                                                               |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scheduled queries | As the name suggests, scheduled queries run periodically to fetch the specified data for you. After the PolyLogyx client is provisioned and the connection to the PolyLogyx server is established, predefined queries are run to pull relevant information for each node. |
+| Scheduled queries | As the name suggests, scheduled queries run periodically to fetch the specified data for you. After the EclecticIQ ER client is provisioned and the connection to the EclecticIQ ER server is established, predefined queries are run to pull relevant information for each node. |
 | Query packs       | A pack is a collection of queries. It allows you to logically group queries into categories. Once defined, you can run all queries included in a pack simultaneously.                                                                                                     |
 | Queries           | A query is an individual request for data from a table or collection of tables. Define an individual query, as needed, to fetch data for nodes.                                                                                                                           |
 | Live Queries      | A Live Query is suitable to meet your immediate and infrequent needs. It gives you a current snapshot of the nodes.                                                                                                                                                       |
@@ -82,7 +82,7 @@ Perform these steps to view or edit scheduled queries:
 
 Query Packs
 --------------------
-By default, few packs are included with your PolyLogyx configuration.  You can add more packs, as needed, to meet your requirements. 
+By default, few packs are included with your EclecticIQ platform.  You can add more packs, as needed, to meet your requirements. 
 
 ### Manage Existing Packs 
 Perform these steps to view and edit packs:
@@ -122,7 +122,7 @@ Perform these steps to add a new query pack.
 
 Queries
 --------------------
-By default, multiple predefined queries are included with your PolyLogyx configuration. These are defined but not assigned to any nodes by default. 
+By default, multiple predefined queries are included with your client configuration. These are defined but not assigned to any nodes by default. 
 
 ### Manage Defined Queries 
 Perform these steps to view or run a predefined query.

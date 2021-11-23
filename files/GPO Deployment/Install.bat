@@ -61,7 +61,7 @@ xcopy %GLBPLGXCERT% %PLGXDIR% /y
 
 chdir %PLGXDIR%
 
-%PLGXBIN% -p -i <PolyLogyx ESP Server IP address> -k %PLGXCERT% 
+%PLGXBIN% -p -i <EIQ ER Server IP address> -k %PLGXCERT%
 
 goto :checkversion
 
