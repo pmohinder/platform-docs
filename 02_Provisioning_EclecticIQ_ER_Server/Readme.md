@@ -15,7 +15,7 @@ server offers:
 
 This chapter includes these topics:
 
--   [Before you Begin](#before-you-begin)
+-   [Before you Begin] (#before-you-begin)
 
 -   [Installing the EclecticIQ_ER Server](#installing-the-eclecticiq-er-server)
 
